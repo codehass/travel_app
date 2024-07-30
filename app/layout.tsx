@@ -1,12 +1,12 @@
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
 
 import './globals.css'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Travel',
-  description: 'travel UI/UX App for Camping',
+  description: 'Travel UI/UX App for Camping',
 }
 
 export default function RootLayout({
@@ -18,11 +18,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-          <main className='relative overflow-hidden'>
+        <main className="relative overflow-hidden">
           {children}
-          </main>
+        </main>
         <Footer />
-        </body>
+      </body>
     </html>
   )
 }
